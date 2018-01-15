@@ -1,0 +1,17 @@
+span{
+  display: none;
+
+}
+p{
+  color: red;
+}
+div{
+  color: red;
+}
+.mostrar{
+  background-color: yellow;
+  width: 80%;
+  margin-bottom: 25px;
+  padding: 10px;
+  color: blue;
+}

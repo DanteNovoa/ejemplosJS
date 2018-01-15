@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>changeEvent</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+
+    </script>
+
+
+  </head>
+  <body>
+    <select id="abc" name="def">
+      <option value="">C</option>
+      <option value="">Python</option>
+      <option selected="selected">Java</option>
+      <option value="">Jquery</option>
+
+    </select>
+
+    <div id="xyz">
+    </div>
+
+    <script type="text/javascript" language="javascript">
+     $("select").change(function(){
+       document.getElementById('xyz').innerHTML="your selection;"+ document.getElementById("abc").value;
+     });
+
+    </script>
+
+
+
+  </body>
+</html>

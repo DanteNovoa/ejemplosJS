@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blur Event</title>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+     $(document).ready(function(){
+       $("#login").blur(function(){
+         alert("este campo debe de ser llenado para continuar");
+       })
+
+     })
+
+    </script>
+  </head>
+  <body>
+    Ingresa tu nombre:<input id="login" type="text">
+    <p>
+      Cuando escribes algo en el caja de input e intentas salir, te va a mandar a una función
+    </p>
+
+  </body>
+</html>

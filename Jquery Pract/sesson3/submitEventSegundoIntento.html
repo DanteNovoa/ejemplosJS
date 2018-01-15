@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit Event </title>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <form action="#" id="registration" method="post">
+      Name: <input type="text" id="txtName"/>
+      <br>
+      Email: <input type="email" id="txtEmail">
+      <br>
+      <input type="submit" id="btnSubmit">
+
+    </form>
+
+    <span id="response"> </span>
+
+    <script type="text/javascript" language="javascript">
+     $("#registration").submit(function(){
+        $("#response").html($(txtName)"registration successful")
+     })
+
+    </script>
+
+  </body>
+</html>

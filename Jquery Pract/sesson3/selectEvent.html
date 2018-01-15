@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Select Event</title>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <input type="text" name="" value="hello this is a course">
+
+    <input type="text" name="" value="hi i am your instructor">
+
+    <div class="">    </div>
+
+    <script type="text/javascript" language="javascript">
+      $(":input").select(function(){
+        $("div").text("you have selected some text from here  ").show().fadeOut(6000);
+      });
+
+    </script>
+
+  </body>
+</html>

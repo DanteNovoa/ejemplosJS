@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Focus</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"language="javascript">
+      $(document).ready(function(){
+        $("input").focus(function(){
+          $(this).next("span").css("display", "inline").fadeOut(5000).fadeIn(5000);
+        });
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <p><input type="text"> <span>aquí está el evento focus</span> </p>
+        <p><input type="password"> <span>aquí está el evento focus</span> </p>
+
+  </body>
+</html>

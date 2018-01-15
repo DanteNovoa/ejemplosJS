@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Focus Form</title>
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+  $(document).ready(function(){
+       $("input").focus(function(){
+         $(this).css("bakcground-color", "#00000");
+       });
+         $("input").blur(function(){
+           $(this).css("bakcground-color","#ffffff");
+
+       });
+   });
+
+    </script>
+  </head>
+  <body>
+    Name:<input type="text" >
+    Password:<input type="password">
+
+  </body>
+</html>

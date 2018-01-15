@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit Event</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form action="javascript:alert('successful submitin')">;
+      <div class="">
+        <input type="text">
+        <input type="text">
+
+      </div>
+    </form>
+
+    <span></span>
+
+    <script type="text/javascript" lanaguage="javascript">
+    $("form").submit(function(event){
+       if($("input:first").val()=="jquery")
+       (
+         $("span").text("you have sumbited succesfuly").show() ' return;
+       )
+
+       $("span").text("not valsItext").show.fadeOut(1000);
+       even.preventDefault();
+
+    });
+
+    </script>
+
+  </body>
+</html>

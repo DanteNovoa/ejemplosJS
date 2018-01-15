@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax PHP Jquery</title>
+    <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="sesson3/main.css">
+  </head>
+  <body>
+    <div id="contenido">
+      <div id="formulario">
+        <form id="frm">
+          <h3>Formulario de Registro</h3>
+          <input type="text" placeholder="Producto" name="producto" id="producto">
+          <input type="text" placeholder="Producto" name="producto" id="producto">
+          <input type="text" placeholder="Producto" name="producto" id="producto">
+          <input type="submit" value="Guardar">
+        </form>
+        <div id="mensaje"> </div>
+      </div>
+    </div>
+    <script>
+     $(document).ready(function(){
+        enviarDatos();
+
+     });
+
+// Las lineas de abajo evitan que se autorecargue la página
+     function enviarDatos(){
+       $("#frm").on("submit", function(e){
+         e.preventDefault();
+         var frm = $(this).serialize();
+         $.ajax({
+           "method": "POST",
+           "url": "producto.php",
+           "data": frm
+         }).done(function(info){
+           $("#mensaje").addClass("mostrar");
+           // vamos a mostrar la respuesta del servidor
+           $("#mensaje").html(info);
+
+         });
+       });
+     }
+    </script>
+
+  </body>
+</html>
